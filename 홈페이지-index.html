@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width",initial-scale="1.0">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+      
+        .container{
+            display:flex;
+            flex-direction:column;
+            width:1200px;
+            height: 900px;
+            border:1px solid gray
+        }
+        .header{
+            background-color: antiquewhite;
+            border-bottom: 1px solid gray;
+        }
+        .header-1{
+            display: flex;    
+        }
+        .header-right-item{
+            display: flex;
+            margin-left: auto;
+            height: 40px;
+            align-items: center;
+           
+        }
+        .header-item{
+            margin: 5px;
+            
+        }
+        .header-2{
+            text-align: center;
+            margin-left: 30px;
+        }
+        footer{
+            border-top:1px solid gray;
+            text-align:center;
+            background-color: antiquewhite;
+            height: 50px;
+    
+        }
+        .content{
+            display:flex;
+            flex-direction: row;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left:1px solid gray;
+        }
+        nav, aside{
+            flex-basis:150px;
+            flex-shrink:0;
+        }
+        main{
+            padding:10px;
+        }
+        nav{
+            order:0;
+        }
+        main{
+            order:1;
+        }
+        aside{
+            order:2;
+        }
+         ul{
+           margin-right: 30px;
+        }
+         .main {
+            display: flex;
+            margin: 0 auto;
+        }
+
+        .sub-title{       
+            font-size: 1.0rem;
+            font-weight: 300px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        .menu{
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        .aside{
+            display: flex;
+            height: 50px;
+            border: 1px solid gray;
+            background-color:darkseagreen;
+            color: black;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        .after{
+            display: flex;
+            width: 870px;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            
+            
+        }
+        .after-item{
+            width: 400px;
+            height: 450px;
+            border: 1px solid gray; 
+            margin: 20px;
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="header">
+           <div class="header-1">
+               <div class="header-right-item">
+                <div class="header-item"><input type="button" value="로그인" ></div>
+                <div class="header-item"><input type="button" value="아이디" ></div>
+                <div class="header-item"><input type="button" value="비밀번호" ></div>
+                <div class="header-item"><input type="button" value="회원가입" ></div>
+               </div>
+        </div>
+          
+        <div class="header-2">
+            <h1><div class="title"><a href="index_main.html">도시가스공사 무료견적</a></div></h1>
+        </div>
+       </div>
+        
+         
+        <section class="content">
+            <nav>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>java</li>
+            </ul>
+            </nav>
+    <main>
+        <div class="main">
+               
+                <div class="sub-title">도시가스공사 소비자들에게 합리적인 가격을 제시하여, 협력업체들에게 시공하게 함을 목적으로 합니다.</div>
+        </div>
+        <div class="menu">
+           <div class="menu-item"><a href="home_1.html">가정집 설치</a></div>
+           <div class="menu-item"><a href="home_2.html">가정집 철거</a></div>
+           <div class="menu-item"><a href="비지니스_1.html">영업집 설치</a></div>
+           <div class="menu-item"><a href="비지니스_2.html">영업집 철거</a></div>
+        </div>   
+        <div class="after">
+            <div class="after-item">개인회원 이용후기
+              <div class="after-item-month">월</div>
+               <div class="after-item-day">날짜</div>
+
+            </div>
+            <div class="after-item">협력업체 이용후기
+               <div class="after-item-month">월</div>
+               <div class="after-item-day">날짜</div>
+            </div>
+        </div>
+    </main>
+               
+                <aside>
+                    AD
+                </aside>
+        </section>
+        <footer>
+            <a href="">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>

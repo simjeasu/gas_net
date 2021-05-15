@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+      
+        .container{
+            display:flex;
+            flex-direction:column;
+            width:1200px;
+            height: 900px;
+            border:1px solid gray
+        }
+        .header{
+            background-color: antiquewhite;
+            border-bottom: 1px solid gray;
+        }
+        .header-1{
+            display: flex;    
+        }
+        .header-right-item{
+            display: flex;
+            margin-left: auto;
+            height: 40px;
+            align-items: center;
+           
+        }
+        .header-item{
+            margin: 5px;
+            
+        }
+        .header-2{
+            text-align: center;
+            margin-left: 30px;
+        }
+        footer{
+            border-top:1px solid gray;
+            text-align:center;
+            background-color: antiquewhite;
+            height: 50px;
+    
+        }
+        .content{
+            display:flex;
+            flex-direction: row;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left:1px solid gray;
+        }
+        nav, aside{
+            flex-basis:150px;
+            flex-shrink:0;
+        }
+        main{
+            padding:10px;
+        }
+        nav{
+            order:0;
+        }
+        main{
+            display: flex;
+            order:1;
+        }
+        aside{
+            order:2;
+        }
+         ul{
+           margin-right: 30px;
+        }
+         .main {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .sub-title{       
+            font-size: 1.0rem;
+            font-weight: 300px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        .menu{
+            text-align: center;
+            font-size: 1.0rem;
+            margin-top: 20px;
+        }
+        .aside{
+            display: flex;
+            height: 50px;
+            border: 1px solid black;
+            background-color:darkseagreen;
+            color: black;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+         .sub-main-title{
+            font-size: 2rem;
+           text-align: center;
+            margin-top: 10px;
+        
+            
+        }
+        .sub-main-title-item{
+            font-size: 1.0rem;
+            font-weight: bold;
+        }
+        .price{
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        .submit{
+            margin-top: 50px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="header">
+           <div class="header-1">
+               <div class="header-right-item">
+                <div class="header-item"><input type="button" value="로그인" ></div>
+                <div class="header-item"><input type="button" value="아이디" ></div>
+                <div class="header-item"><input type="button" value="비밀번호" ></div>
+                <div class="header-item"><input type="button" value="회원가입" ></div>
+               </div>
+        </div>
+          
+        <div class="header-2">
+            <h1><div class="title"><a href="index_main.html">홈으로 돌아가기</a></div></h1>
+        </div>
+       </div>
+        
+         
+        <section class="content">
+            <nav>
+            <ul>
+                <div class="menu">
+           <div class="menu-item"><a href="home_1.html">가정집 설치</a></div>
+           <div class="menu-item"><a href="home_2.html">가정집 철거</a></div>
+           <div class="menu-item"><a href="비지니스_1.html">영업집 설치</a></div>
+           <div class="menu-item"><a href="비지니스_2.html">영업집 철거</a></div>
+        </div>   
+            </ul>
+            </nav>
+    <main>
+        <div class="main">
+            <div class="sub-main-title">가정집 설치   
+                <div class="sub-title">도시가스공사 소비자들에게 합리적인 가격을 제시하여, 협력업체들에게 시공하게 함을 목적으로 합니다.</div>
+        </div>
+       
+         
+        <div class="sub-main-title-item">
+         <h2>주거형태</h2>
+             단독주택:<input type="radio"name="choice"value="단독주택">
+             빌라주택:<input type="radio"name="choice"value="빌라주택">
+             아파트:<input type="radio"name="choice"value="아파트">
+             기타:<input type="radio"name="choice"value="기타"></div>
+        <div class="sub-main-title-item">
+         <h2>기존계량기 유무</h2>
+             기존 계량기 있음:<input type="radio"name="choice2"value="계량기 있음">
+             기존 계량기 없음:<input type="radio"name="choice2"value="계량기 없음">
+                </div>
+                <div class="sub-main-title-item">
+                  <h2>높이</h2>
+             2층 이하:<input type="radio"name="choice3"value="2층 이하">
+             3층 이상:<input type="radio"name="choice3"value="3층 이상">      
+               </div>
+               <div class="sub-main-title-item">
+ 
+
+            <div class="price">최종공사금액:<input type="text" value=""></div>
+            <div class="submit"><input type="button" value="해당 금액에 공사를 진행 하시겠습니까?"></div>
+            </div>
+        </div>
+    </main>
+               
+                <aside>
+                    AD
+                </aside>
+        </section>
+        <footer>
+            <a href="">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>
